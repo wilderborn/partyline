@@ -20,7 +20,7 @@ public function handle()
 
 Then in your regular classes, you may call any public `Illuminate\Console\Command` methods on the `Partyline` facade, just like you would inside the command class.
 
-```
+``` php
 Partyline::info('foo');
 // Equivalent to $this->info('foo') within your command.
 ```
