@@ -66,7 +66,7 @@ class YourCommand extends AbstractCommand
 }
 ```
 
-```
+``` php
 class AbstractCommand extends Command
 {
     /**
