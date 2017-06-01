@@ -14,7 +14,7 @@ In your console command's `handle` method, bind the command into Partyline:
 ``` php
 public function handle()
 {
-	Partyline::bind($this);
+    Partyline::bind($this);
 }
 ```
 
@@ -38,15 +38,15 @@ For Laravel 5.4 and below, register the service provider and facade:
 ``` php
 // config/app.php
 'providers' => [
-	...
-	Wilderborn\Partyline\ServiceProvider::class,
-	...
+    ...
+    Wilderborn\Partyline\ServiceProvider::class,
+    ...
 ],
 
 'aliases' => [
-	...
-	'Partyline' => Wilderborn
-	...
+    ...
+    'Partyline' => Wilderborn
+    ...
 ]
 ```
 
@@ -59,10 +59,10 @@ If you have many commands classes, you may find it tedious to bind into Partylin
 ``` php
 class YourCommand extends AbstractCommand
 {
-	public function handle()
-	{
-		//
-	}
+    public function handle()
+    {
+        //
+    }
 }
 ```
 
