@@ -12,5 +12,15 @@
         "psr-4": {
             "Wilderborn\\Partyline\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wilderborn\\Partyline\\ServiceProvider"
+            ],
+            "aliases": {
+                "Partyline": "Wilderborn\\Partyline\\Facade"
+            }
+        }
     }
 }
