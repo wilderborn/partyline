@@ -45,7 +45,7 @@ For Laravel 5.4 and below, register the service provider and facade:
 
 'aliases' => [
     ...
-    'Partyline' => Wilderborn
+    'Partyline' => Wilderborn\Partyline\Facade::class,
     ...
 ]
 ```
