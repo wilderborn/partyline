@@ -1,0 +1,16 @@
+{
+    "name": "wilderborn/partyline",
+    "description": "A Laravel 5 package to output to the console from outside of command classes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Varga",
+            "email": "jason@wilderborn.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wilderborn\\Partyline\\": "src"
+        }
+    }
+}
