@@ -25,8 +25,6 @@ Partyline::info('foo');
 // Equivalent to $this->info('foo') within your command.
 ```
 
-![Partyline in action](https://statamic.com/img/blog/partyline.gif)
-
 ## Installation
 
 This package can be installed through Composer.
