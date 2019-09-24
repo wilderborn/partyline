@@ -2,6 +2,7 @@
 
 namespace Wilderborn\Partyline;
 
+use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
 /**
