@@ -2,11 +2,9 @@
 
 namespace Wilderborn\Partyline;
 
-use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
 /**
- * Class Facade
  * @method static void bind(\Illuminate\Console\Command $console)
  * @method static \Symfony\Component\Console\Output\OutputInterface getOutput()
  * @method static void line(string $string, string $style = null, int|string|null $verbosity = null)
