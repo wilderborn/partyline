@@ -9,20 +9,36 @@ With Partyline, you can use output commands within your logic. If it's being run
 
 ## Usage
 
-In your console command's `handle` method, bind the command into Partyline:
+In your console command's `handle` method, bind the command into Partyline using the facade:
 
 ``` php
 public function handle()
 {
-    Partyline::bind($this);
+    \Partyline::bind($this);
 }
 ```
 
 Then in your regular classes, you may call any public `Illuminate\Console\Command` methods on the `Partyline` facade, just like you would inside the command class.
 
 ``` php
-Partyline::info('foo');
+\Partyline::info('foo');
 // Equivalent to $this->info('foo') within your command.
+```
+
+### Facade usage
+
+You can either use the globally aliased facade with a slash:
+
+```php
+\Partyline::method();
+```
+
+Or, you can import the facade:
+
+```php
+use Wilderborn\Partyline\Facade as Partyline;
+
+Partyline::method();
 ```
 
 ## Installation
@@ -78,7 +94,7 @@ class AbstractCommand extends Command
      */
     public function run(InputInterface $input, OutputInterface $output)
     {
-        Partyline::bind($this);
+        \Partyline::bind($this);
 
         return parent::run($input, $output);
     }
