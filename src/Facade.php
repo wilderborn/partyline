@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Facade as IlluminateFacade;
  * @method static void error(string $string, int|string|null $verbosity = null)
  * @method static void warn(string $string, int|string|null $verbosity = null)
  * @method static void alert(string $string)
+ * @method static void newLine(int $count = 1)
  * @method static void table(array $headers, \Illuminate\Contracts\Support\Arrayable|array $rows, string $tableStyle = 'default', array $columnStyles = [])
  *
  * @see \Wilderborn\Partyline\Partyline
+ * @see \Illuminate\Console\Concerns\InteractsWithIO
  * @see \Illuminate\Console\Command
  */
 class Facade extends IlluminateFacade

@@ -5,7 +5,7 @@ namespace Wilderborn\Partyline;
 class NullConsole
 {
     /**
-     * Any calls to this class just return itself so you can chain forever and ever.
+     * Any calls to this class just return itself, so you can chain forever and ever.
      *
      * @param string $method
      * @param array $args
